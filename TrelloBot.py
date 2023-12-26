@@ -2,6 +2,8 @@ import discord
 from discord.ext import commands
 from trello import TrelloApi
 
+#Need to finish building
+
 # Discord Bot Token
 DISCORD_TOKEN = 'YOUR_DISCORD_BOT_TOKEN'
 
@@ -145,8 +147,6 @@ async def vote_task(ctx, card_name):
     except Exception as e:
         print(e)
         await ctx.send('Error adding vote.')
-
-# Add more commands for other functionalities...
 
 # Run the bot
 bot.run(DISCORD_TOKEN)
